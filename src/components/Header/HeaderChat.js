@@ -1,6 +1,6 @@
-import { auth } from '../../firebase'
+
 import './header.css'
-import { signOut } from 'firebase/auth'
+
 import { AuthContext } from '../../context/AuthContext'
 import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
