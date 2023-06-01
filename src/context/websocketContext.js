@@ -13,7 +13,7 @@ function WebSocketProvider({ children }) {
   const [lastCommonMessage, setLastCommonMessage] = useState(null);
   const wsRef = useRef(null);
   useEffect(() => {
-    const newWebSocket = new ReconnectingWebSocket("ws://localhost:4000");
+    const newWebSocket = new ReconnectingWebSocket("ws://194.61.52.152:4000");
     wsRef.current = newWebSocket;
     setWebSocket(newWebSocket);
     newWebSocket.addEventListener("open", () => {
