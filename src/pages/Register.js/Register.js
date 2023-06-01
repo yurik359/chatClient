@@ -16,7 +16,7 @@ const Register = () => {
     const password = e.target[1].value;
 
     try {
-      const res = await fetch("http://localhost:4000/register", {
+      const res = await fetch("http://194.61.52.152:4000/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
