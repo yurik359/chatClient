@@ -27,7 +27,7 @@ const RightSide = () => {
     } else {
       try {
         setValue("");
-        await fetch("http://localhost:4000/sendMessage", {
+        await fetch("http://194.61.52.152:4000/sendMessage", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
