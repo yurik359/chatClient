@@ -1,0 +1,36 @@
+.header-right {
+  background-color: #5a4580;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 44.9%;
+  height: 40px;
+  align-items: center;
+  color: rgb(224, 217, 217);
+  padding: 0 4px;
+}
+
+.header-right__btn {
+  cursor: pointer;
+}
+.header-right__member-list {
+  max-height: 100px;
+  min-width: 100px;
+  position: absolute;
+  overflow: auto;
+  z-index: 9;
+  background-color: aliceblue;
+  right: 15px;
+  top: 30px;
+}
+
+.header-right__container {
+  position: relative;
+}
+
+.member-list__item {
+  margin-bottom: 3px;
+  margin-left: 3px;
+  color: #000;
+  cursor: pointer;
+}
