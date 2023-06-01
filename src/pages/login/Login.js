@@ -25,7 +25,7 @@ const Login = () => {
       const data = await res.json();
       localStorage.setItem('currentUser', JSON.stringify({nickname:data.user.nickname,uid:data.user._id}));
 
-       setCurrentUser(data.user)
+       setCurrentUser({nickname:data.user.nickname,uid:data.user._id})
    
       navigate("/");
     } catch (err) {
