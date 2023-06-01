@@ -13,7 +13,7 @@ const FindUser = () => {
 
   const handleFind = async () => {
     try {
-      const res= await fetch("http://localhost:4000/findUser", {
+      const res= await fetch("http://194.61.52.152:4000/findUser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -42,7 +42,7 @@ const FindUser = () => {
 
     try {
       
-       await fetch("http://localhost:4000/selectUser", {
+       await fetch("http://194.61.52.152:4000/selectUser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
