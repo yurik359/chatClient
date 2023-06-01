@@ -15,7 +15,7 @@ const Login = () => {
     const password = e.target[1].value;
     
     try {
-     const res= await fetch("http://localhost:4000/login", {
+     const res= await fetch("http://194.61.52.152:4000/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
