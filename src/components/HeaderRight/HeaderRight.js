@@ -17,7 +17,7 @@ const HeaderRight = () => {
 
   const handleMembersList = async () => {
     try {
-      const res = await fetch("http://localhost:4000/getMemberList");
+      const res = await fetch("http://194.61.52.152:4000/getMemberList");
       const data = await res.json();
       const clearedData = data.documents.filter((e) => e.nickname && e._id);
       setMember(clearedData);
@@ -35,7 +35,7 @@ const HeaderRight = () => {
         : user._id + currentUser.uid;
 
     try {
-      await fetch("http://localhost:4000/selectUser", {
+      await fetch("http://194.61.52.152:4000/selectUser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
